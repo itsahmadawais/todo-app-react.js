@@ -6,13 +6,7 @@ import TasksList from './components/TasksList';
 import { useState } from 'react';
 
 function App() {
-  const [tasks, setTasks] = useState([
-    'Task 1',
-    'Task 2',
-    'Task 3',
-    'Task 4',
-    'Task 5'
-  ]);
+  const [tasks, setTasks] = useState([]);
   const addTask = (val) => {
     setTasks((prevState) => [...prevState, val]);
   }
